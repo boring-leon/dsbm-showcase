@@ -54,7 +54,8 @@ const artists = [
     {
         image: "xasthur.jpg",
         text: "Xasthur",
-        path: "Xasthur- Prison of Mirrors.mp3"
+        path: "Xasthur - Prison of Mirrors.mp3",
+        about: ``
     },
     {
         image: "xathrites.jpg",
