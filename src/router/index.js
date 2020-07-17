@@ -18,7 +18,7 @@ Vue.use(VueRouter)
       props: (route) => ({ artist: getArtist(route.params.name) })
     },
     {
-      path: '/',
+      path: '*',
       name: 'home',
       component: HomeView,
       props:{
