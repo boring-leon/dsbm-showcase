@@ -15,7 +15,10 @@ Vue.use(VueRouter)
       path: '/artist/:name', 
       name: 'artist',
       component: ArtistView,
-      props: (route) => ({ artist: getArtist(route.params.name) })
+      props: (route) => ({ artist: getArtist(route.params.name) }),
+      beforeEnter: (to, from, next) => {
+        artists.find(a => a.text.toLowerCase() == to.params.name) ? next() : next('/');
+      }
     },
     {
       path: '*',
