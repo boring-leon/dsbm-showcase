@@ -20,6 +20,7 @@ export default {
     }
   }
 };
+
 </script>
 
 <style>
@@ -27,14 +28,14 @@ img {
   display: block;
   height: 100%;
   width: 100%;
-  opacity: 80%;
+  opacity: 0.8;
   cursor: pointer;
   border-radius: 10px;
   transition: transform 0.9s ease;
 }
 
 .artist:hover > img {
-  opacity: 100%;
+  opacity: 1;
   transform: scale(1.08);
 }
 
