@@ -73,4 +73,11 @@ img {
   height: 400px;
   overflow: hidden;
 }
+
+@media only screen and (max-width: 768px) {
+  .artist{
+    width: 320px;
+    height: 320px;
+  }
+}
 </style>
