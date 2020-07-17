@@ -36,7 +36,7 @@ const artists = [
         image: "no_point_in_living.jpg",
         text: "No point in living",
         path: "No Point In Living - Urban Melancholy.mp3",
-        about: ``
+        about: `As one of the most prolific bands within the genre, No Point In Living releases new music on a regular basis. They like to experiment with a variety of different styles and instruments.`
     },
     {
         image: "sacrimoon.jpg",
@@ -63,13 +63,13 @@ const artists = [
         image: "wintercult.jpg",
         text: "Wintercult",
         path: "Wintercult - Frozen in Melancholy.mp3",
-        about: ``
+        about: `One man band from Yekaterinburg, Russia created by <i>Waldgeist</i> in 2010, active up to date. Recurring motives include winter, depression and misanthropy. Highly atmospheric.`
     },
     {
         image: "xasthur.jpg",
         text: "Xasthur",
         path: "Xasthur - Prison of Mirrors.mp3",
-        about: ``
+        about: `One man project created by <i>Scott Conner</i>, active between 1995 and 2010. Its style is unmistakable, mixing esoteric themes such as astral projections with dsbm canon  - feelings of despair, emptiness and isolation.`
     },
     {
         image: "xathrites.jpg",
