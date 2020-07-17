@@ -37,6 +37,9 @@ body {
   .grid-container {
     grid-template-columns: repeat(1, 1fr);
   }
+  #app{
+    height: 90vh;
+  }
 }
 
 h1, h2, h3, h4 {

@@ -27,7 +27,7 @@ img {
   display: block;
   height: 100%;
   width: 100%;
-  opacity: 55%;
+  opacity: 80%;
   cursor: pointer;
   border-radius: 10px;
   transition: transform 0.9s ease;
