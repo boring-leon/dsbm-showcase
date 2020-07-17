@@ -3,7 +3,7 @@ const artists = [
         image: "austere.jpg",
         text: "Austere",
         path: "Austere - To Fade With The Dusk.mp3",
-        about: `Formed in 2005 in Australia by Mitchell <i>„Desolate”</i> Keepin, joined in 2007 by Tim <i>„Sorrow"</i> Yatras, Austerte features a very dense, melancholic atmosphere, that's so easy to get immersed into.`
+        about: `Formed in 2005 in Australia by Mitchell <i>„Desolate”</i> Keepin, joined in 2007 by Tim <i>„Sorrow"</i> Yatras, Austerte features a very dense, melancholic atmosphere, that's so easy to get immersed in.`
     },
     {
         image: "drowned.jpg",
@@ -22,7 +22,7 @@ const artists = [
         text: "Life is pain",
         path: "Life Is Pain - Oppressive Nights In Mental Asylum.mp3",
         opacity: "25%",
-        about: `Life Is Pain formed in 2006 by <i>Trist</i> and <i>Kim Carlsson</i>, putting out a demo CD titled <i>Bloody Melancholy</i>. The project ended in the same year, since Kim wanted to focus more on <i>Lifelover</i>.
+        about: `Life is pain formed in 2006 by <i>Trist</i> and <i>Kim Carlsson</i>, putting out a demo CD titled <i>Bloody Melancholy</i>. The project ended in the same year, since Kim wanted to focus more on <i>Lifelover</i>.
         `
     },
     {
@@ -36,7 +36,7 @@ const artists = [
         image: "no_point_in_living.jpg",
         text: "No point in living",
         path: "No Point In Living - Urban Melancholy.mp3",
-        about: `As one of the most prolific bands within the genre, No Point In Living releases new music on a regular basis. They like to experiment with a variety of different styles and instruments.`
+        about: `As one of the most prolific bands within the genre, No point in living releases new music on a regular basis. They like to experiment with a variety of different styles and instruments.`
     },
     {
         image: "sacrimoon.jpg",
