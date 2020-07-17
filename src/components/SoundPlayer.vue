@@ -86,6 +86,7 @@ button {
   position:absolute;
   left:50%;
   bottom: 0;
+  outline:none;
 }
 
 button:disabled {
