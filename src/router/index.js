@@ -4,7 +4,7 @@ import ArtistView from '../views/Artist.vue';
 import HomeView from '../views/Home.vue';
 import artists from '../artists';
 
-const getShuffledArtists = () => artists.sort(() => Math.random() - 0.5);
+const getArtists = () => artists.sort((a, b) => a.text.localeCompare(b.text))
 
 const getArtist = name => artists.find(i => i.text.toLowerCase() == name);
 
@@ -25,7 +25,7 @@ Vue.use(VueRouter)
       name: 'home',
       component: HomeView,
       props:{
-        artists: getShuffledArtists()
+        artists: getArtists()
       }
     }
   ]
