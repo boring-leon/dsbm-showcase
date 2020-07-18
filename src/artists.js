@@ -75,6 +75,35 @@ const artists = [
         image: "xathrites.jpg",
         text: "Xathrites",
         path: "Xathrites - My Last Day Story.mp3",
+        opacity: 0.45,
+        about: ``
+    },
+    {
+        image: "sterbend.jpg",
+        text: "Sterbend",
+        path: "Sterbend - left to weep and mourn.mp3",
+        opacity: 0.6,
+        about: ``,
+    },
+    {
+        image: "life_memories.jpg",
+        text: "Life memories",
+        path: "Life Memories - Pain, Lament and Loneliness.mp3",
+        opacity: 0.5,
+        about: ``
+    },
+    {
+        image: "exiled_from_the_light.jpg",
+        text: "Exiled from the light",
+        path: "Exiled From Light - The Bitter Taste Of Tears.mp3",
+        opacity: 0.45,
+        about: ``
+    },
+    {
+        image: "autumn_laments.jpg",
+        text: "Autumn Laments",
+        path: "Autumn Laments - Autumn Forest.mp3",
+        opacity: 0.45, 
         about: ``
     }
 
