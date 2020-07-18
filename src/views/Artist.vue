@@ -54,8 +54,5 @@ i{
   h1{
     font-size: 2rem;
   }
-  button{
-    margin-left:-140px;
-  }
 }
 </style>

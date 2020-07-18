@@ -1,7 +1,9 @@
 <template>
-  <button v-show="isLoaded" :class="buttonClass" @click="isPlayed = !isPlayed">
-    {{ buttonText }}
-  </button>
+  <div class="player-container" v-show="isLoaded">
+    <p class="player-info" v-if="!isPlayed">Click the button or press space to play</p>
+    <p class="player-info" v-else>Use arrows to control volume (current vol {{ volume }})</p>
+    <button :class="buttonClass" @click="isPlayed = !isPlayed">{{ buttonText }}</button>
+  </div>
 </template>
 
 <script>
@@ -17,6 +19,7 @@ export default {
   },
   data() {
     return {
+      volume: 0.5,
       player: null,
       isPlayed: false,
       isLoaded: false,
@@ -26,23 +29,48 @@ export default {
   mounted() {
     this.player = new Howl({
       src: [`${this.publicPath}audio/${this.artist.path}`],
-      volume: 0.1,
+      volume: this.volume,
       autoload: true
     });
-    
+
     this.player.once("load", () => {
       this.isLoaded = true;
-      this.$nextTick(() => this.setBtnMarginLeft());
+      this.$nextTick(() => this.setContainerMarginLeft());
     });
+
+    document.body.onkeyup = e => {
+      this.bindSpaceToButtonAction(e);
+      this.bindArrowsToVolumeControl(e);
+    };
   },
-  beforeDestroy(){
+  beforeDestroy() {
     this.player.unload();
   },
 
-  methods:{
-    setBtnMarginLeft(){
-      const btn = document.querySelector('button');
-      btn.style.marginLeft = btn.offsetWidth / -2 + 'px';
+  methods: {
+    setContainerMarginLeft(
+      container = document.querySelector(".player-container")
+    ) {
+      const parent = document.querySelector(".text-center");
+      container.style.marginLeft = parent.offsetWidth / -2 + "px";
+    },
+    bindSpaceToButtonAction(e) {
+      if (e.keyCode == 32) {
+        this.isPlayed = !this.isPlayed;
+      }
+    },
+    bindArrowsToVolumeControl(e) {
+      if (e.keyCode == 38 && this.isPlayed) {
+        this.changeVolumeBy(0.1);
+      } else if (e.keyCode == 40 && this.isPlayed) {
+        this.changeVolumeBy(-0.1);
+      }
+    },
+    changeVolumeBy(val) {
+      let vol = Math.round((this.player.volume() + val) * 10) / 10;
+      vol = vol < 0 ? 0 : vol;
+      vol = vol > 1 ? 1 : vol;
+      this.volume = vol;
     }
   },
 
@@ -50,8 +78,10 @@ export default {
     buttonClass() {
       return this.isPlayed ? "pause" : "play";
     },
-    buttonText(){
-      return this.isPlayed ? "Click again to pause": this.artist.path.substring(0, this.artist.path.length -4 );
+    buttonText() {
+      return this.isPlayed
+        ? "Click me or press space to pause"
+        : this.artist.path.substring(0, this.artist.path.length - 4);
     }
   },
   watch: {
@@ -61,15 +91,38 @@ export default {
       } else {
         this.player.pause();
       }
-      this.$nextTick(() => this.setBtnMarginLeft());
+      this.$nextTick(() => this.setContainerMarginLeft());
+    },
+    volume() {
+      this.player.volume(this.volume);
     }
   }
 };
 </script>
 
 <style>
+.player-container {
+  left: 50%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0 5px 5px 5px;
+}
+
+.player-info {
+  font-style: italic;
+  margin-bottom: 10px;
+  color: grey;
+  font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .player-info {
+    display: none;
+  }
+}
+
 button {
-  margin-top: 30px;
   cursor: pointer;
   color: white;
   font-size: 14px;
@@ -80,17 +133,9 @@ button {
   transition-duration: 0.3s;
   border-width: 0;
   letter-spacing: 2px;
-  min-width: 160px;
   text-transform: uppercase;
   white-space: normal;
-  position:absolute;
-  left:50%;
-  bottom: 0;
-  outline:none;
-}
-
-button:disabled {
-  background-color: grey;
+  outline: none;
 }
 
 .play {
@@ -98,6 +143,6 @@ button:disabled {
 }
 
 .pause {
-  background-color: #DC143C;
+  background-color: #dc143c;
 }
 </style>
