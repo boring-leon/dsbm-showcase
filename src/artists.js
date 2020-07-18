@@ -29,7 +29,7 @@ const artists = [
         image: "my_useless_life.jpg",
         text: "My useless life",
         path: "My Useless Life - A Heart Full of Sorrow.mp3",
-        opacity: "45%",
+        opacity: 0.45,
         about: `Founded in September 2011 by <i>F</i>, joined by <i>S</i> in November 2011. The overdrive effect and echoing vocals, present on most of their tracks, can really make you feel like your lost in a maze of auditory fog.`
     },
     {
@@ -81,7 +81,7 @@ const artists = [
     {
         image: "sterbend.jpg",
         text: "Sterbend",
-        path: "Sterbend - left to weep and mourn.mp3",
+        path: "Sterbend - Left to weep and mourn.mp3",
         opacity: 0.6,
         about: ``,
     },
