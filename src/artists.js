@@ -15,7 +15,7 @@ const artists = [
         image: "hopeless.jpg",
         text: "Hopeless",
         path: "Hopeless - My Razor My Crown.mp3",
-        about: `Hopeless is a spanish one man band founded in 2008 by S.<br/> He's style seems to be influenced by atmospheric black and doom metal.`
+        about: `Hopeless is a spanish one man band founded in 2008 by <i>S</i>.<br/> He's style seems to be influenced by atmospheric black and doom metal.`
     },
     {
         image: "life_is_pain.jpg",
@@ -30,7 +30,7 @@ const artists = [
         text: "My useless life",
         path: "My Useless Life - A Heart Full of Sorrow.mp3",
         opacity: 0.45,
-        about: `Founded in September 2011 by <i>F</i>, joined by <i>S</i> in November 2011. The overdrive effect and echoing vocals, present on most of their tracks, can really make you feel like your lost in a maze of auditory fog.`
+        about: `Founded in September 2011 by <i>F</i>, joined by <i>S</i> in November 2011. The overdrive effect and echoing vocals, present on most of their tracks, can really make you feel like you're lost in a maze of auditory fog.`
     },
     {
         image: "no_point_in_living.jpg",
@@ -42,13 +42,15 @@ const artists = [
         image: "sacrimoon.jpg",
         text: "Sacrimoon",
         path: "Sacrimoon - Solitude and Coldness.mp3",
-        about: ``
+        about: `An international band formed in 2012 by <i>L. Nergot</i>, joined in 2014 by <i>Kijel</i>. The consistent, very still pace and notably clean production perfectly convey a sense of deep sorrow and emptiness`
     },
     {
         image: "through_the_pain.jpg",
         text: "Through the pain",
         path: "Through the Pain - Time Heals Nothing.mp3",
-        about: ``
+        about: `Created by <i>Bael'vect in 2006</i>, joined by <i>Wiedergaenger</i> and <i>R</i>. 
+        Through The Pain specialises in communicating painful memories of life via tormented cries, screams and monotonous chants.
+        `
     },
     {
         image: "trist.jpg",
@@ -105,6 +107,19 @@ const artists = [
         path: "Autumn Laments - Autumn Forest.mp3",
         opacity: 0.45, 
         about: ``
+    },
+    {
+        image: "apanthropy.jpg",
+        text: "Apanthropy",
+        path: "Apanthropy - Red Tears.mp3",
+        opacity: 0.5,
+        about: ``
+    },
+    {
+        image: "hanging_garden.jpg",
+        text: "Hanging garden",
+        path: "Hanging Garden - Sleep Overdose.mp3",
+        about: `American band from San Diego, California, active between 2008 - 2012. Their work was inspired by yearnful reflections on the downsides of love and relationships.`
     }
 
 ];
