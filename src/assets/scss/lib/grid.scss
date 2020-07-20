@@ -1,0 +1,16 @@
+.grid-container {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5em;
+    padding: 55px 0 55px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #app {
+        height: 98vh;
+    }
+}

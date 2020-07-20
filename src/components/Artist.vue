@@ -23,20 +23,22 @@ export default {
 
 </script>
 
-<style>
-img {
-  display: block;
-  height: 100%;
-  width: 100%;
-  opacity: 0.8;
-  cursor: pointer;
-  border-radius: 10px;
-  transition: transform 0.9s ease;
+<style scoped>
+
+.artist {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
 }
 
 .artist:hover > img {
   opacity: 1;
   transform: scale(1.08);
+}
+
+.artist:hover > .overlay {
+  opacity: 0.8;
 }
 
 .overlay {
@@ -52,10 +54,6 @@ img {
   transition: 0.5s ease;
 }
 
-.artist:hover > .overlay {
-  opacity: 0.8;
-}
-
 .overlay > p {
   color: white;
   font-size: 2.3em;
@@ -66,13 +64,6 @@ img {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-}
-
-.artist {
-  position: relative;
-  width: 400px;
-  height: 400px;
-  overflow: hidden;
 }
 
 @media only screen and (max-width: 768px) {

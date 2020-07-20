@@ -22,26 +22,13 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .text-center{
   text-align: center;
   margin-top: 5px;
   padding: 10px;
   position: relative;
   height: 100%;
-}
-p{
-  font-size:2.5em
-}
-
-h1{
-  font-size: 5.5rem;
-  font-weight: 300;
-  line-height: 1.2;
-}
-
-i{
-  font-size: 2.2rem;
 }
 
 @media only screen and (max-width: 768px) {

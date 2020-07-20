@@ -1,0 +1,24 @@
+@import "./lib/grid.scss";
+@import "./lib/transitions.scss";
+@import "./lib//utils.scss";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    -webkit-font-smoothing: antialiased;
+    background: #000;
+    color: #999;
+}
+
+#app {
+    height: 98vh;
+}

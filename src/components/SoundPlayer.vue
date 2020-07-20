@@ -100,7 +100,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .player-container {
   left: 50%;
   position: absolute;
@@ -120,22 +120,6 @@ export default {
   .player-info {
     display: none;
   }
-}
-
-button {
-  cursor: pointer;
-  color: white;
-  font-size: 14px;
-  line-height: 1;
-  border-radius: 500px;
-  padding: 18px 48px 16px;
-  transition-property: background-color, border-color, color, box-shadow, filter;
-  transition-duration: 0.3s;
-  border-width: 0;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  white-space: normal;
-  outline: none;
 }
 
 .play {
