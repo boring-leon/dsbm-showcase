@@ -19,7 +19,8 @@ export default {
       .typeString(this.artist.about)
       .start()
       .callFunction(() => {
-        document.querySelector(".Typewriter__cursor").remove();
+        const cursor = document.querySelector(".Typewriter__cursor");
+        cursor ? cursor.remove() : () => {};
       });
   },
   computed: {
