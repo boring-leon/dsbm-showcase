@@ -109,10 +109,9 @@ const artists = [
         about: ``
     },
     {
-        image: "apanthropy.jpg",
-        text: "Apanthropy",
-        path: "Apanthropy - Red Tears.mp3",
-        opacity: 0.5,
+        image: "when_mine_eyes_blacken.jpg",
+        text: "When Mine Eyes Blacken",
+        path: "When Mine Eyes Blacken - Beneath Pale Stars.mp3",
         about: ``
     },
     {
