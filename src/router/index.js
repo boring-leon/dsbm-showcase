@@ -10,30 +10,37 @@ const getArtist = name => artists.find(i => i.text.toLowerCase() == name);
 
 Vue.use(VueRouter)
 
-  const routes = [
-    { 
-      path: '/artist/:name', 
-      name: 'artist',
-      component: ArtistView,
-      props: (route) => ({ artist: getArtist(route.params.name) }),
-      beforeEnter: (to, from, next) => {
-        artists.find(a => a.text.toLowerCase() == to.params.name) ? next() : next('/');
-      }
-    },
-    {
-      path: '*',
-      name: 'home',
-      component: HomeView,
-      props:{
-        artists: getArtists()
-      }
+const routes = [
+  {
+    path: '/artist/:name',
+    name: 'artist',
+    component: ArtistView,
+    props: (route) => ({ artist: getArtist(route.params.name) }),
+    beforeEnter: (to, from, next) => {
+      artists.find(a => a.text.toLowerCase() == to.params.name) ? next() : next('/');
     }
-  ]
+  },
+  {
+    path: '*',
+    name: 'home',
+    component: HomeView,
+    props: {
+      artists: getArtists()
+    }
+  }
+]
 
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
-  routes
+  routes,
+  scrollBehavior : (to, from, savedPosition) => {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve(savedPosition ? savedPosition : {})
+      }, 600)
+    })
+  } 
 })
 
 export default router
