@@ -1,6 +1,6 @@
 <template>
   <div class="grid-container">
-    <router-link
+    <router-link v-scroll-reveal="{ delay: 350 }"
       v-for="(artist, key) in artists"
       :key="key"
       :to="{name: 'artist', params: {'name' : artist.text.toLowerCase() }}"
