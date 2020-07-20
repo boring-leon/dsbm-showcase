@@ -119,6 +119,25 @@ const artists = [
         text: "Hanging garden",
         path: "Hanging Garden - Sleep Overdose.mp3",
         about: `American band from San Diego, California, active between 2008 - 2012. Their work was inspired by yearnful reflections on the downsides of love and relationships.`
+    },
+    {
+        image: "veil.jpg",
+        text: "Veil",
+        path: "Veil - To Die Alone.mp3",
+        opacity: 0.5,
+        about: ``
+    },
+    {
+        image: "nocturnal_depression.jpg",
+        text: "Nocturnal Depression",
+        path: "Nocturnal Depression - Solitude And Despair.mp3",
+        about: ``
+    },
+    {
+        image: "life_neglected.jpg",
+        text: "Life Neglected",
+        path: "Life Neglected - As Suicide Brought Hope.mp3",
+        about: ``
     }
 
 ];
