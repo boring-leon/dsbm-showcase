@@ -123,7 +123,7 @@ const artists = [
     {
         image: "veil.jpg",
         text: "Veil",
-        path: "Veil - To Die Alone.mp3",
+        path: "Veil - Dirge.mp3",
         opacity: 0.5,
         about: ``
     },
