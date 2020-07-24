@@ -1,8 +1,11 @@
 <template>
-  <div class="player-container" v-show="isLoaded">
-    <p class="player-info" v-if="!isPlayed">Click the button or press space to play</p>
-    <p class="player-info" v-else>Use arrows to control volume (current vol {{ volume }})</p>
-    <button :class="buttonClass" @click="isPlayed = !isPlayed">{{ buttonText }}</button>
+  <div class="player-container">
+    <template v-if="isLoaded">
+      <p class="player-info" v-if="!isPlayed">Click the button or press space to play</p>
+      <p class="player-info" v-else>Use arrows to control volume (current vol {{ volume }})</p>
+      <button :class="buttonClass" @click="isPlayed = !isPlayed">{{ buttonText }}</button>
+    </template>
+    <button disabled v-else>Your song is loading...</button>
   </div>
 </template>
 
@@ -26,6 +29,7 @@ export default {
       publicPath: process.env.BASE_URL
     };
   },
+  
   mounted() {
     this.player = new Howl({
       src: [`${this.publicPath}audio/${this.artist.path}`],
@@ -35,13 +39,14 @@ export default {
 
     this.player.once("load", () => {
       this.isLoaded = true;
-      this.$nextTick(() => this.setContainerMarginLeft());
     });
 
     document.body.onkeyup = e => {
       this.bindSpaceToButtonAction(e);
       this.bindArrowsToVolumeControl(e);
     };
+
+    this.$nextTick(() => this.setContainerMarginLeft());
   },
   beforeDestroy() {
     this.player.unload();
@@ -79,9 +84,10 @@ export default {
       return this.isPlayed ? "pause" : "play";
     },
     buttonText() {
-      return this.isPlayed
-        ? "Click me or press space to pause"
-        : this.artist.path.substring(0, this.artist.path.length - 4);
+      return this.isPlayed ? "Click me or press space to pause" : this.songName;
+    },
+    songName() {
+      return this.artist.path.substring(0, this.artist.path.length - 4);
     }
   },
   watch: {
