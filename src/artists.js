@@ -15,7 +15,7 @@ const artists = [
         image: "hopeless.jpg",
         text: "Hopeless",
         path: "Hopeless - My Razor My Crown.mp3",
-        about: `Hopeless is a spanish one man band founded in 2008 by <i>S</i>.<br/> He's style seems to be influenced by atmospheric black and doom metal.`
+        about: `Hopeless is a Spanish one man band founded in 2008 by <i>S</i>.<br/> His style seems to be influenced by atmospheric black and doom metal.`
     },
     {
         image: "life_is_pain.jpg",
@@ -27,16 +27,16 @@ const artists = [
     },
     {
         image: "my_useless_life.jpg",
-        text: "My useless life",
+        text: "My Useless Life",
         path: "My Useless Life - A Heart Full of Sorrow.mp3",
         opacity: 0.45,
         about: `Founded in September 2011 by <i>F</i>, joined by <i>S</i> in November 2011. The overdrive effect and echoing vocals, present on most of their tracks, can really make you feel like you're lost in a maze of auditory fog.`
     },
     {
         image: "no_point_in_living.jpg",
-        text: "No point in living",
+        text: "No Point in Living",
         path: "No Point In Living - Urban Melancholy.mp3",
-        about: `As one of the most prolific bands within the genre, No point in living releases new music on a regular basis. They like to experiment with a variety of different styles and instruments.`
+        about: `As one of the most prolific bands within the genre, No Point in Living releases new music on a regular basis. They like to experiment with a variety of different styles and instruments.`
     },
     {
         image: "sacrimoon.jpg",
@@ -46,10 +46,10 @@ const artists = [
     },
     {
         image: "through_the_pain.jpg",
-        text: "Through the pain",
+        text: "Through the Pain",
         path: "Through the Pain - Time Heals Nothing.mp3",
         about: `Created by <i>Bael'vect in 2006</i>, joined by <i>Wiedergaenger</i> and <i>R</i>. 
-        Through The Pain specialises in communicating painful memories of life via tormented cries, screams and monotonous chants.
+        Through the Pain specialises in communicating painful memories of life via tormented cries, screams and monotonous chants.
         `
     },
     {
