@@ -1,5 +1,9 @@
 <template>
-  <p :id="`${artistID}_info`"></p>
+  <p
+    :id="`${artistID}_info`"
+    @dblclick="hasArtistBeenAlreadyVisited ? {} : handleDbClick()"
+    style="cursor:pointer;"
+  ></p>
 </template>
 
 <script>
@@ -14,28 +18,37 @@ export default {
     }
   },
   beforeDestroy() {
-    this.$store.commit("addVisitedArtistRoute", this.artistID);
+    if (!this.hasArtistBeenAlreadyVisited) {
+      this.$store.commit("addVisitedArtistRoute", this.artistID);
+    }
   },
 
   mounted() {
-    const root = document.querySelector(`#${this.artistID}_info`);
-
     if (this.hasArtistBeenAlreadyVisited) {
-      root.innerHTML = this.artist.about;
+      this.writerRoot.innerHTML = this.artist.about;
     } else {
-      this.startWriting(root);
+      this.startWriting();
     }
   },
   methods: {
-    startWriting(root) {
-      const writer = new Typewriter(root);
-      writer
+    startWriting() {
+      this.writer = new Typewriter(this.writerRoot);
+      this.writer
         .typeString(this.artist.about)
         .start()
         .callFunction(() => {
-          const cursor = document.querySelector(".Typewriter__cursor");
-          cursor ? cursor.remove() : () => {};
+          this.removeCursor();
         });
+    },
+    handleDbClick() {
+      this.writer.stop();
+      this.removeCursor();
+      this.writerRoot.innerHTML = this.artist.about;
+    },
+
+    removeCursor() {
+      const cursor = document.querySelector(".Typewriter__cursor");
+      if (cursor) cursor.remove();
     }
   },
 
@@ -46,6 +59,9 @@ export default {
     },
     hasArtistBeenAlreadyVisited() {
       return this.$store.state.visitedArtists.includes(this.artistID);
+    },
+    writerRoot() {
+      return document.querySelector(`#${this.artistID}_info`);
     }
   }
 };
