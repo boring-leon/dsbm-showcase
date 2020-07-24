@@ -145,6 +145,19 @@ const artists = [
         path: "Sorry - Claudia.mp3",
         opacity: 0.4,
         about: `A protest against all forms of life voiced through works of pain and isolation.`
+    },
+    {
+        image: "selvhat.jpg",
+        text: "Selvhat",
+        path: "Selvhat - Selvhat.mp3",
+        about: ``
+    },
+    {
+        image: "be_persecuted.jpg",
+        text:"Be Persecuted",
+        path: "Be Persecuted - Painfull Assemble.mp3",
+        opacity: 0.4,
+        about: ``
     }
 
 ];
