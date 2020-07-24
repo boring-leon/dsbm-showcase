@@ -19,10 +19,10 @@ const artists = [
     },
     {
         image: "life_is_pain.jpg",
-        text: "Life is pain",
+        text: "Life Is Pain",
         path: "Life Is Pain - Oppressive Nights In Mental Asylum.mp3",
         opacity: "25%",
-        about: `Life is pain formed in 2006 by <i>Trist</i> and <i>Kim Carlsson</i>, putting out a demo CD titled <i>Bloody Melancholy</i>. The project ended in the same year, since Kim wanted to focus more on <i>Lifelover</i>.
+        about: `Life Is Pain formed in 2006 by <i>Trist</i> and <i>Kim Carlsson</i>, putting out a demo CD titled <i>Bloody Melancholy</i>. The project ended in the same year, since Kim wanted to focus more on <i>Lifelover</i>.
         `
     },
     {
@@ -42,7 +42,7 @@ const artists = [
         image: "sacrimoon.jpg",
         text: "Sacrimoon",
         path: "Sacrimoon - Solitude and Coldness.mp3",
-        about: `An international band formed in 2012 by <i>L. Nergot</i>, joined in 2014 by <i>Kijel</i>. The consistent, very still pace and notably clean production perfectly convey a sense of deep sorrow and emptiness`
+        about: `An international band formed in 2012 by <i>L. Nergot</i>, joined in 2014 by <i>Kijel</i>. The consistent, very still pace and notably clean production perfectly convey a sense of deep sorrow and emptiness.`
     },
     {
         image: "through_the_pain.jpg",
@@ -57,7 +57,7 @@ const artists = [
         text: "Trist",
         path: "Trist - Těžkost bytí.mp3",
         about: `Jan Šincl: "<i>I recorded music when I was set free from  mental asylum. It was recorded in few days, I had inspiration. I think I won’t make more music in the future. Now my life is alcohol and I think it will destroy me.</i>"<br/><br/>
-        The word "trist" translates to „depressing”, „dreary” or „sad” in many languages.
+        The word <i>trist</i> translates to „depressing”, „dreary” or „sad” in many languages.
         He's music is raw, hopless, trance-inducing. Immense.
         `
     },
@@ -89,14 +89,14 @@ const artists = [
     },
     {
         image: "life_memories.jpg",
-        text: "Life memories",
+        text: "Life Memories",
         path: "Life Memories - Pain, Lament and Loneliness.mp3",
         opacity: 0.5,
         about: ``
     },
     {
-        image: "exiled_from_the_light.jpg",
-        text: "Exiled from the light",
+        image: "exiled_from_light.jpg",
+        text: "Exiled From Light",
         path: "Exiled From Light - The Bitter Taste Of Tears.mp3",
         opacity: 0.45,
         about: ``
@@ -116,7 +116,7 @@ const artists = [
     },
     {
         image: "hanging_garden.jpg",
-        text: "Hanging garden",
+        text: "Hanging Garden",
         path: "Hanging Garden - Sleep Overdose.mp3",
         about: `American band from San Diego, California, active between 2008 - 2012. Their work was inspired by yearnful reflections on the downsides of love and relationships.`
     },
@@ -138,6 +138,13 @@ const artists = [
         text: "Life Neglected",
         path: "Life Neglected - As Suicide Brought Hope.mp3",
         about: ``
+    },
+    {
+        image: "sorry.jpg",
+        text: "Sorry...",
+        path: "Sorry - Claudia.mp3",
+        opacity: 0.4,
+        about: `A protest against all forms of life voiced through works of pain and isolation.`
     }
 
 ];
