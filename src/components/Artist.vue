@@ -71,5 +71,8 @@ export default {
     width: 320px;
     height: 320px;
   }
+  .overlay{
+    opacity: 0.8;
+  }
 }
 </style>
