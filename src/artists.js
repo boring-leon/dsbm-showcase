@@ -15,7 +15,7 @@ const artists = [
         image: "hopeless.jpg",
         text: "Hopeless",
         path: "Hopeless - My Razor My Crown.mp3",
-        about: `Hopeless is a Spanish one man band founded in 2008 by <i>S</i>.<br/> His style seems to be influenced by atmospheric black and doom metal.`
+        about: `Hopeless is a Spanish one-man band founded in 2008 by <i>S</i>.<br/> His style seems to be influenced by atmospheric black and doom metal.`
     },
     {
         image: "life_is_pain.jpg",
@@ -65,13 +65,13 @@ const artists = [
         image: "wintercult.jpg",
         text: "Wintercult",
         path: "Wintercult - Frozen in Melancholy.mp3",
-        about: `One man band from Yekaterinburg, Russia created by <i>Waldgeist</i> in 2010, active up to date. Recurring motives include winter, depression and misanthropy. Highly atmospheric.`
+        about: `One-man band from Yekaterinburg, Russia created by <i>Waldgeist</i> in 2010, active up to date. Recurring motives include winter, depression and misanthropy. Highly atmospheric.`
     },
     {
         image: "xasthur.jpg",
         text: "Xasthur",
         path: "Xasthur - Prison of Mirrors.mp3",
-        about: `One man project created by <i>Scott Conner</i>, active between 1995 and 2010. Its style is unmistakable, mixing esoteric themes such as astral projections with dsbm canon  - feelings of despair, emptiness and isolation.`
+        about: `One-man project created by <i>Scott Conner</i>, active between 1995 and 2010. Its style is unmistakable, mixing esoteric themes such as astral projections with dsbm canon  - feelings of despair, emptiness and isolation.`
     },
     {
         image: "xathrites.jpg",
@@ -166,6 +166,19 @@ const artists = [
         opacity: 0.4,
         about: `This project is strongly influenced by post punk and depressive rock. <br> "<i>Through these lovely melodies I try to cheer myself up from my depression.</i>"`
 
+    },
+    {
+        image: "nyctophilia.jpg",
+        text: "Nyctophilia",
+        path: "Nyctophilia - Bezdeń.mp3",
+        about: `One-man band from Poland, created back in dark December of 2014. <br> <i>Nyctophilia</i> is a psychological condition in which a person loves or finds deep comfort in the darkness.`
+    },
+    {
+        image: "annorkoth.jpg",
+        text: "Annorkoth",
+        path: "Annorkoth - The End, Here and Now.mp3",
+        about: `Depressive/atmospheric black metal project formed in Podolsk, Russia, in 2010 by <i>B.M</i>, closed on February 6, 2013. Its main purpose was expressing vexatiously painful feelings of desolation, thereby helping people to find catharsis and relief.`
+        
     }
 
 ];
