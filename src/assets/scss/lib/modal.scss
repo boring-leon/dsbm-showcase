@@ -27,7 +27,11 @@
     color:black;
   }
 
-  
+  @media only screen and (max-width: 768px) {
+    .modal-container{
+      width: 98vw;
+    }
+  }
   .modal-body {
     margin: 20px 0;
   }
