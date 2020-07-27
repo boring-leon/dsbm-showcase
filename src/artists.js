@@ -3,7 +3,7 @@ const artists = [
         image: "austere.jpg",
         text: "Austere",
         path: "Austere - To Fade With The Dusk.mp3",
-        about: `Formed in 2005 in Australia by Mitchell <i>„Desolate”</i> Keepin, joined in 2007 by Tim <i>„Sorrow"</i> Yatras, Austerte features a very dense, melancholic atmosphere, that's so easy to get immersed in.`
+        about: `Formed in 2005 in Australia by Mitchell <i>„Desolate”</i> Keepin, joined in 2007 by Tim <i>„Sorrow”</i> Yatras, Austerte features a very dense, melancholic atmosphere, that's so easy to get immersed in.`
     },
     {
         image: "drowned.jpg",
@@ -15,7 +15,7 @@ const artists = [
         image: "hopeless.jpg",
         text: "Hopeless",
         path: "Hopeless - My Razor My Crown.mp3",
-        about: `Hopeless is a Spanish one-man band founded in 2008 by <i>S</i>.<br/> His style seems to be influenced by atmospheric black and doom metal.`
+        about: `Hopeless is a Spanish one-man band founded in 2008 by <i>S</i>.<br> His style seems to be influenced by atmospheric black and doom metal.`
     },
     {
         image: "life_is_pain.jpg",
@@ -56,8 +56,8 @@ const artists = [
         image: "trist.jpg",
         text: "Trist",
         path: "Trist - Těžkost bytí.mp3",
-        about: `Jan Šincl: "<i>I recorded music when I was set free from  mental asylum. It was recorded in few days, I had inspiration. I think I won’t make more music in the future. Now my life is alcohol and I think it will destroy me.</i>"<br/><br/>
-        The word <i>trist</i> translates to „depressing”, „dreary” or „sad” in many languages.
+        about: `"<i>I recorded music when I was set free from  mental asylum. It was recorded in few days, I had inspiration. I think I won’t make more music in the future. Now my life is alcohol and I think it will destroy me.</i>"<br><br>
+        The word <i>trist</i> translates to <i>depressing</i>, <i>dreary</i> or <i>sad</i> in many languages.
         He's music is raw, hopless, trance-inducing. Immense.
         `
     },
@@ -164,14 +164,14 @@ const artists = [
         text: "EmptyLife",
         path: "EmptyLife - Homeless.mp3",
         opacity: 0.4,
-        about: `This project is strongly influenced by post punk and depressive rock. <br> "<i>Through these lovely melodies I try to cheer myself up from my depression.</i>"`
+        about: `This project is strongly influenced by post punk and depressive rock. <br><br> "<i>Through these lovely melodies I try to cheer myself up from my depression.</i>"`
 
     },
     {
         image: "nyctophilia.jpg",
         text: "Nyctophilia",
         path: "Nyctophilia - Bezdeń.mp3",
-        about: `One-man band from Poland, created back in dark December of 2014. <br> <i>Nyctophilia</i> is a psychological condition in which a person loves or finds deep comfort in the darkness.`
+        about: `One-man band from Poland, created back in dark December of 2014. <br><br> <i>Nyctophilia</i> is a psychological condition in which a person loves or finds deep comfort in the darkness.`
     },
     {
         image: "annorkoth.jpg",
