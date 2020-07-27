@@ -5,11 +5,14 @@ Vue.use(Vuex);
 
 const store = new Vuex.Store({
     state: {
-      visitedArtists: []
+      visitedArtists: [],
+      shouldShowModal: !JSON.parse(localStorage.getItem('artistModalShown'))
     },
     mutations: {
-      addVisitedArtistRoute (state, artistID) {
-        state.visitedArtists.push(artistID);
+      addVisitedArtistRoute: (state, artistID) => state.visitedArtists.push(artistID),
+      hideModal : (state) => {
+        state.shouldShowModal = false;
+        localStorage.setItem('artistModalShown', true);
       }
     }
 })
