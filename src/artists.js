@@ -9,7 +9,7 @@ const artists = [
         image: "drowned.jpg",
         text: "Drowned",
         path: "Drowned - 72 Hours Awake Thinking About Suicide.mp3",
-        about: `Drowned is a duo from Brazil. Their music puts heavy emphasis on feelings of hatred and anguish.`
+        about: `Duo from Brazil. Their music puts heavy emphasis on feelings of hatred and anguish.`
     },
     {
         image: "hopeless.jpg",
@@ -85,7 +85,7 @@ const artists = [
         text: "Sterbend",
         path: "Sterbend - Left to weep and mourn.mp3",
         opacity: 0.6,
-        about: ``,
+        about: `German project formed in 2000, currently on hold. They have managed to find a perfect combination of doom metal and depressive black metal, mixing together wolf-like howls with slow, sorrowful sounds, suicidal in their very nature.`,
     },
     {
         image: "life_memories.jpg",
@@ -158,6 +158,14 @@ const artists = [
         path: "Be Persecuted - Painfull Assemble.mp3",
         opacity: 0.4,
         about: ``
+    },
+    {
+        image: "empty_life.jpg",
+        text: "EmptyLife",
+        path: "EmptyLife - Homeless.mp3",
+        opacity: 0.4,
+        about: `This project is strongly influenced by post punk and depressive rock. <br> "<i>Through these lovely melodies I try to cheer myself up from my depression.</i>"`
+
     }
 
 ];
