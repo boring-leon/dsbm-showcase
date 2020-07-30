@@ -106,7 +106,7 @@ const artists = [
         text: "Autumn Laments",
         path: "Autumn Laments - Autumn Forest.mp3",
         opacity: 0.45, 
-        about: ``
+        about: `Atmospheric/depressive one-man black metal project from Germany, created in 2018 by <i>L.S</i>, active to date. Through his work, the artist contemplates nature as well as ruminates on his sorrow and loneliness.`
     },
     {
         image: "when_mine_eyes_blacken.jpg",
@@ -125,7 +125,8 @@ const artists = [
         text: "Veil",
         path: "Veil - Dirge.mp3",
         opacity: 0.5,
-        about: ``
+        about: `Depressive black metal project from Minnesota, USA, created by <i>S.</i> in 2003, joined by <i>Thurisaz</i> later down the line. Split up in 2012. To experience Veil means to take great relish  
+        in nightmarish dirges, full of heart-rending cries accompanied by mournful, distorted guitars, which cut right through ones soul, creating a very dark, funeral-like aura.`
     },
     {
         image: "nocturnal_depression.jpg",
