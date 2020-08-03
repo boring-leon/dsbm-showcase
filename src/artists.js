@@ -180,6 +180,48 @@ const artists = [
         path: "Annorkoth - The End, Here and Now.mp3",
         about: `Depressive/atmospheric black metal project formed in Podolsk, Russia, in 2010 by <i>B.M</i>, closed on February 6, 2013. Its main purpose was expressing vexatiously painful feelings of desolation, thereby helping people to find catharsis and relief.`
         
+    },
+    {
+        image: "lost_in_desolation.jpg",
+        text: "Lost in Desolation",
+        path: "Lost in Desolation - Memory.mp3",
+        opacity: 0.45,
+        about: ``
+    },
+    {
+        image: "coldworld.jpg",
+        text: "Coldworld",
+        path: "Coldworld - Suicide.mp3",
+        opacity: 0.5,
+        about: ``
+    },
+    {
+        image: "cheerful_depression.jpg",
+        text: "Cheerful Depression",
+        path: "Cheerful Depression - Sleep Forever.mp3",
+        opacity: 0.45,
+        about: ``
+    },
+    {
+        image: "burzum.jpg",
+        text: "Burzum",
+        path: "Burzum - A Lost Forgotten Sad Spirit.mp3",
+        opacity: 0.45,
+        about: ``
+    },
+    {
+        image: "black_hate.jpg",
+        text: "Black Hate",
+        path: "Black Hate - Alone and Cold.mp3",
+        opacity: 0.45,
+        about: ``
+    },
+    {
+        image: "herbstregen.jpg",
+        text: "Herbstregen",
+        path: "Herbstregen - Life Failed.mp3",
+        opacity: 0.45,
+        about: ``
     }
 
 ];
