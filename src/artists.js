@@ -222,6 +222,13 @@ const artists = [
         path: "Herbstregen - Life Failed.mp3",
         opacity: 0.45,
         about: ``
+    },
+    {
+        image: "dead_life.jpg",
+        text: "Deadlife",
+        path: "Deadlife - The wounds that you gave.mp3",
+        opacity: 0.45,
+        about: ``
     }
 
 ];
