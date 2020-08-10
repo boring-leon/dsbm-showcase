@@ -229,6 +229,19 @@ const artists = [
         path: "Deadlife - The wounds that you gave.mp3",
         opacity: 0.45,
         about: ``
+    },
+    {
+        image: "lost_inside.jpg",
+        text: "Lost Inside",
+        path: "Lost Inside - I Hate Myself.mp3",
+        about: ``
+    },
+    {
+        image: "apati.jpg",
+        text: "Apati",
+        path: "Apati - Likgiltighetens Slutstation.mp3",
+        about: ``,
+        opacity: 0.45
     }
 
 ];
