@@ -233,7 +233,7 @@ const artists = [
     {
         image: "lost_inside.jpg",
         text: "Lost Inside",
-        path: "Lost Inside - I Hate Myself.mp3",
+        path: "Lost Inside - Reflections of Sadness.mp3",
         about: ``
     },
     {
