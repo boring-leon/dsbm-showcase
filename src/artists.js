@@ -233,7 +233,7 @@ const artists = [
     {
         image: "lost_inside.jpg",
         text: "Lost Inside",
-        path: "Lost Inside - Reflections of Sadness.mp3",
+        path: "Lost Inside - Like A Wilted Flower.mp3",
         about: ``
     },
     {
@@ -242,6 +242,26 @@ const artists = [
         path: "Apati - Likgiltighetens Slutstation.mp3",
         about: ``,
         opacity: 0.45
+    },
+    {
+        image: "psychalgia.jpg",
+        text: "Psychalgia",
+        path: "Psychalgia - Cold Alienation.mp3",
+        about: ``,
+        opacity: 0.45
+    },
+    {
+        image: "melancolie.jpg",
+        text: "Melancolie",
+        path: "Melancolie - Lost Life.mp3",
+        about: ``,
+        opacity: 0.45
+    },
+    {
+        image: "pure.jpg",
+        text: "Pure",
+        path: "Pure - Losing my mind.mp3",
+        about: ``
     }
 
 ];
